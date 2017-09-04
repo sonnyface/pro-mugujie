@@ -1,0 +1,187 @@
+@import "main.scss";
+
+.shopingType{
+	width:100%;
+	height:100%;
+	overflow-y:auto;
+	position:relative;
+	&::-webkit-scrollbar {display:none};
+
+	#header{
+		height:44px;
+		width:100%;
+		background:#eee;
+		position:fixed;
+		left:0;top:0;
+		z-index: 200;
+
+		.commonHeader{
+			 width:100%;
+                height:100%;
+                @include flexBox;
+                @include flex-direction("row");
+                
+                .homeImg1,.homeImg2{
+                    width:44px;
+                    height:44px;
+                    @include flexBox;
+                    @include flex-center;
+                    margin:0 5px;
+                    img{
+                        width:25px;
+                     }
+                }
+                .headerBox{
+                    @include flexBox;
+                    @include flex(1);
+                    height:36px;
+                    margin-top:4px;
+                    background:#ddd;
+                    border-radius:5px;
+                    line-height:36px;
+                    color:#666;            
+                   img{
+                       height:24px;
+                       padding:6px;                                             
+                    }
+                }
+		    }
+
+
+	}
+	
+	.shoppingContent{
+		width:100%;	
+		background:#eee;
+		position: absolute;
+		top:84px;left:0;
+		
+		.arrany{
+			width:100%;
+			height:40px;
+			background:#fff;
+			position:fixed;
+			left:0;top:44px;
+			
+			ul{
+				width:100%;
+				height:100%;
+				@include flexBox;
+				@include flex-direction("row");
+				li:nth-of-type(1){
+					width:75%;
+					height:100%;				
+					.popShops{
+						height:100%;
+						width:33%;
+						float:left;
+						text-align: center;
+						line-height: 40px;
+						font-size:13px;
+						color:#666;
+						span{
+							padding: 0 30%;
+							border-right:1px solid #ccc;
+						}
+					}
+					.popShops:first-child{
+						color:#f66;
+					}
+
+				}
+
+				li:nth-of-type(2){
+					border-right:none;
+					width:25%;
+					@include flex-center;
+					strong{
+						font-size:13px;
+						color:#666;
+						font-weight:100;
+						i{
+							padding-left:5px;
+							font-size:13px;
+							color:#666;
+							font-weight:800;
+						}
+
+					}
+				}
+			}
+
+
+		}
+
+
+
+
+
+
+		.shopsList{
+			width:100%;
+			overflow:hidden;
+			box-sizing:border-box;
+			padding:3px;
+			background:#efefef;
+
+			.shopsList01{
+				width:46%;
+				height:330px;
+				margin-left:10px;
+				margin-bottom:10px;
+				float:left;
+				background:#fff;
+				.shopImage{
+					width:100%;
+					img{
+						width:100%;
+					}
+				}
+				ul{
+					width:100%;
+					height:45px;
+					background:#fff;
+					box-sizing:border-box;
+					overflow:hidden;
+					padding:5px;
+					li{
+						font-size:12px;
+						padding:2px 2px;
+						background:#eee;
+						margin:0 2px 2px 0;
+						border-radius:2px;
+						float:left;
+					}
+				}
+				.btmTxt{
+					background:#fff;
+					width:100%;
+					height:23px;
+					border:none;
+					p{
+						width:40%;
+						font-size:15px;
+						font-weight:900;
+						float:left;
+						padding-left:5px;
+						line-height:23px;
+					}
+					.btmImg{
+						width:40%;
+						float:right;
+						span{
+							font-size:12px;
+							padding-right:5px;
+						}
+						img{
+							width:14px;
+						}
+					}
+				}
+			}
+		}
+
+
+	}
+
+}

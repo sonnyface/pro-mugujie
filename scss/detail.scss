@@ -1,0 +1,539 @@
+@import "./main.scss";
+
+.type{
+	width:100%;
+	height:100%;
+	overflow-y:auto;
+	position:relative;
+	&::-webkit-scrollbar {display:none}
+
+
+	.banner02{
+		width:100%;
+		height:500px;
+		img{
+			width:100%;
+		}
+	}
+
+	.DetailContent{
+		width:100%;
+		min-height:300px;
+		height:auto!important;
+		height:300px;
+		
+		.DeteailHeader{
+			width:100%;
+			box-sizing:border-box;
+			padding:15px 15px 0;
+			.datealBox{
+				width:100%;
+				h2{
+				width:100%;
+				font:16px "宋体";
+				width:315px;
+				padding-bottom:10px;
+				}
+				.det01{
+				width:100%;
+				height:50px;
+				p:nth-of-type(1){					
+					float:left;
+					width:100px;
+					overflow: hidden;
+					span{
+						font-size:13px;
+						float:left;
+					}
+					b{
+						font-size: 30px;
+						font-weight: 100;
+						float:left;
+					}
+				}
+				p:nth-of-type(2){					
+					float:left;
+					width:100px;
+					margin-left:10px;
+					span{
+						font-size:12px;
+						display:block;
+						text-decoration:line-through;
+					}
+					i{
+						width:27px;
+						height:16px;
+						font-size: 12px;
+						font-weight: 100;
+						display:block;
+						background:#FFE8EE;
+						padding:2px 3px;
+						color:red;
+					}
+				}
+
+			}
+		}	
+
+		}
+		.youfei{
+			width:95%;
+			margin-left:5%;			
+			p{
+				width:100%;
+				height:38px;
+				border-bottom:1px solid #ddd;
+				line-height:38px;
+				font-size:14px;
+				color:#666;
+			 }
+			 ul{
+			 	width:100%;
+				height:38px;
+				line-height:38px;
+				li{
+					float:left;
+					margin-right:13px;
+					img{
+						width:15px;
+						padding-right:10px;
+					}
+					span{
+
+						line-height:15px;
+						font-size:13px;
+						color:#666;
+					}
+				}
+				.iconfont{
+					float:right;
+					padding-right:15px;
+				}
+				
+			 }
+		  }
+
+		.kongBox{
+			width:100%;
+			height:10px;
+			background-color: #eee;
+		}
+
+		.colorSize{
+			width:95%;
+			margin-left:5%;	
+			height:45px;
+			line-height:45px;
+			font-size:14px;
+			color:#666;
+			p{
+				float:left;
+			}
+			i{
+				float:right;
+				padding-right:15px;
+			}
+		}
+
+		.comment{
+			width:100%;
+			box-sizing:border-box;
+			padding:0 15px;
+			ul{
+				width:100%;
+				height:58px;
+				overflow: hidden;
+				li{
+					float:left;
+					font-size:12px;
+					padding:3px 4px;
+					margin:0 5px 5px 0;
+					background:#FFE6E8;	
+					border-radius:3px;		
+				}
+			}
+
+		}
+
+		.comment01{
+				width:100%;
+				box-sizing:border-box;
+				padding:0 15px;	
+				ul{
+					width:100%;
+					li{
+						width:100%;
+						border-bottom:2px solid #eee;
+						margin:10px 0;
+
+						.main01{
+							width:100%;
+							height:40px;
+							
+							img{
+								height:28px;
+								width:28px;
+								float:left;
+								border-radius:28px;
+								padding-top:7px;
+							}
+							span{
+								height:40px;
+								line-height:40px;
+								float:left;
+								font-size:16px;
+								color:#666;
+								padding-left:10px;
+							}
+						}
+						.main02{
+							width:100%;
+							font-size:12px;
+							line-height:20px;
+						}
+						.main03{
+							width:100%;
+							margin-top:10px;
+							p{
+								font-size:12px;
+								color:#666;
+								line-height:20px;
+							}
+							.anyStyle{
+								width:100%;
+								font-size:13px;
+								color:#666;
+								padding-bottom:5px;
+								span{
+									padding-right:5px;
+								}
+							}
+						}
+
+						.main04{
+							width:100%;
+							padding-bottom:10px;
+							img{
+								width:70px;
+								
+
+							}
+						}
+					}
+					li:nth-of-type(2){
+						border-bottom: none;						
+					}
+					
+				}			
+			}
+
+			.shangjia{
+				width:100%;
+				box-sizing:border-box;
+				padding:15px;	
+
+				.header{
+					width:100%;
+					@include flexBox;
+										
+					img{
+						width:48px;
+						height:48px;						
+					}
+					.star{
+					 	@include flex(1);
+					 	padding-left:10px;
+					 	font-size:14px;
+					 	color:#666;
+					 	p{
+					 		line-height:20px;
+					 		i{
+					 			color:red;
+					 		}
+					 	}
+					}
+					b{
+						display:block;
+						width:62px;
+						height:30px;
+						text-align: center;
+						line-height:30px;
+						font-size:13px;
+						border-radius:5px;
+						border:1px solid #f66;
+					}
+
+				}
+				.shopInfo{
+					width:100%;
+
+					ul{
+						width:100%;
+						height:54px;
+						@include flexBox;
+						margin-top:10px;
+
+						li{
+							width: 33%;
+							font-size:14px;
+							@include flex-center;
+
+							h3{
+								font:15px "微软雅黑";
+							}
+
+							p{
+								font-size:12px;
+								color:#666;
+								i{
+									padding-left:5px;
+									color:green;
+									font-size:12px;
+								}
+							}						
+						}
+
+						li:nth-of-type(2){
+							border-left:1px solid #ddd;
+							border-right:1px solid #ddd;
+						}
+
+					}
+
+				}
+				
+			}
+			.feiLei{
+				width:100%;								
+				ul{
+					width:100%;
+					height:45px;
+					@include flexBox;
+
+					li{
+						width:33.3%;
+						@include flex-center;
+						border-bottom:1px solid #666;
+						&::active{
+							color:#f66;
+							border-bottom:1px solid #f66;
+						}
+					}
+					
+
+				}				
+			}
+			.titDetail{
+				width:100%;
+
+				.tit11{
+					width:100%;
+					box-sizing:border-box;
+					padding:0 15px;
+					padding-top:15px;
+					overflow: hidden;
+					.img01{
+						width:100px;
+						height:10px;
+						img{
+							width:100px;
+						}						
+					}
+					p{
+						display:block;
+						width:100%;
+						height:51px;					
+						text-align:center;
+						line-height:51px;					
+						span{
+							font-size: 13px;
+							color:#666;
+						}
+
+					}
+
+					.img02{
+						width:100%;
+						height:15px;
+						img{
+							width:100px;
+							float:right;
+						}
+						
+					}
+					.Effect{
+						width:100%;
+						height:30px;
+						span{
+							font-size: 13px;
+							color:#666;
+						}
+					}
+				}
+				.BigImger{
+					width:100%;
+					box-sizing:border-box;
+					.ImgKey{
+						width:100%;
+						img{
+							width:100%;
+						}
+					}
+				}
+			}
+	}
+
+	.detailFooter{
+		position:fixed;
+		left:0;
+		bottom:0;
+		width:100%;
+		height:50px;
+		background: #fff;
+		
+		.kefu{
+			width:50%;
+			height:100%;
+			float:left;	
+			@include flexBox;	
+
+			dl{
+				@include flex-center;
+				width:33%;
+				float:left;
+				
+				img{
+					width:18px;
+				}
+				dt{
+					font-size:14px
+
+				}
+			}
+			dt:nth-of-type(1){
+				border-left:1px solid #ddd;
+				border-right:1px solid #ddd;
+			}		
+		}
+
+		.JoinCar{
+			width:50%;
+			height:100%;
+			float:right;
+			@include flexBox;
+			font-size:14px;	
+
+			.JoinCar01{
+				width:50%;
+				height:100%;
+				@include flex-center;
+				background:#FFE6E8;
+
+			}
+			.JoinCar02{
+				width:50%;
+				height:100%;
+				@include flex-center;
+				background:#FF498B;
+				color:#fff;
+
+			}
+		}
+
+	}
+
+	.CarBox02{
+		position:fixed;
+		left:0;
+		top:0;
+		z-index:200;
+		width:100%;
+		height:100%;
+		background: rgba(0,0,0,0.2);
+		display:none;
+
+		.CarBoxDetail{
+			width:100%;
+			height:50%;
+			position:absolute;
+			left:0;
+			bottom:0;
+			background:#fff;
+
+
+			.CarBoxHeader{
+				width:100%;
+				height:70px;
+				margin-top: 10px;
+				.CarBoxImg{
+					width:100px;
+					width:100px;
+					height:150px;
+					margin:-80px 15px 0 15px;
+					float:left;
+					img{
+						width:100%;							
+					}
+				}
+			
+				
+				.CarBoxTxt{
+					float:left;
+
+					p:nth-of-type(1){
+						font-size:13px;
+						span{
+							font-size:23px;							
+						}
+					}
+					p:nth-of-type(2){
+						font-size:13px;
+						line-height:22px;
+						
+					}
+					p:nth-of-type(3){
+						font-size:13px;
+					}
+
+				}
+				.tuiChu{
+					width:16px;
+					height:16px;
+					position: absolute;
+					right:15px;
+					top:5px;
+					i{
+						font-size:15px;
+					}
+				}
+
+
+			}
+			.CarBoxContent{
+				width:100%;
+
+			}
+			.CarBoxBottom{
+				width:100%;
+				height:50px;
+				background:#FF498B;
+				position:absolute;
+				left:0;
+				bottom:0;	
+				text-align:center;
+				line-height:50px;
+				color:#fff;			
+			}
+
+
+
+
+
+
+		  }
+
+	}
+
+
+
+}

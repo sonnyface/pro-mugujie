@@ -1,0 +1,220 @@
+@import "main.scss";
+#kingType{
+	width:100%;
+	height:100%;
+	background:#fff;
+	
+	.kindHeader{
+		width:100%;
+		height:44px;
+		border-bottom:1px solid #ddd;
+	}
+
+	.kindContent{
+		width:100%;
+		top:44px;
+		@include flexBox;
+		@include flex-direction("row");
+		nav{
+			width:90px;
+			background:#eee;
+			overflow-y:auto;
+			&::-webkit-scrollbar {display:none};
+
+			.kingNav{
+				width:100%;	
+
+				li{
+					width:100%;
+					height:45px;
+					text-align: center;
+					line-height:45px;
+					
+					span{
+						font-size: 14px;
+						color:#666;	
+					}
+				}
+				
+				.NavActive{
+					background:#fff;
+					text-align: left;
+					 span{
+						font-size: 14px;
+						color:#FF5577;
+						padding-left:28px;
+						font-weight:800;
+						border-left:3px solid #FF5577;	
+					}
+				}
+
+				.NavActive:nth-of-type(1){
+					background:#fff;
+					text-align: left;
+					 span{
+						font-size: 14px;
+						color:#FF5577;
+						padding-left:14px;
+						font-weight:800;
+						border-left:3px solid #FF5577;	
+					}
+				}
+
+			}
+
+		}
+
+		.section{
+			@include flex(1);
+			overflow-y:auto;
+			&::-webkit-scrollbar {display:none};
+
+			.kinder{
+				width:100%;
+				ul{
+					width:100%;
+					box-sizing:border-box;
+					padding:5px;
+					overflow: hidden;
+					
+					li{
+						width:33.3%;
+						height:95px;
+						float:left;
+						margin-bottom:10px;
+						@include flexBox;
+						@include flex-direction("clumn");
+						@include flex-center;
+						img{
+							@include flex-center;
+							width:65px;
+						}
+						p{
+							font-size:12px;
+							color:#666;
+							padding-top:10px;
+						}
+					}
+				}
+			}
+
+			.kindBtm{
+				width:100%;
+				margin-top:10px;
+				box-sizing:border-box;
+				padding:5px;
+
+				.BtmHeader{
+					width:100%;
+					ul{
+						width:100%;
+						border-top:2px solid #eee;
+						border-bottom:2px solid #eee;
+						overflow: hidden;
+						li{
+							width:33.3%;
+							height:40px;
+							float:left;
+							text-align:center;
+							line-height:40px;
+							span{
+								font-size: 14px;
+								color:#666；
+							}
+						}
+						li:nth-of-type(1) span{
+						    color:#FF5577;	
+						  	}
+						li:nth-of-type(2) span{
+							width:100%;
+							height:20px;	
+							margin-top:10px;
+							line-height:20px;
+							display:inline-block;
+							border-right:2px solid #eee;
+							border-left:2px solid #eee;
+						}
+					}
+				}
+
+				.BtmContents{
+					width:100%;
+					box-sizing:border-box;
+					padding:5px 0 5px 5px;
+					ul{
+						width:100%;
+						overflow:hidden;
+						
+						li{
+							width:48%;							
+							float:left;
+							margin-right:5.3px;
+							margin-bottom: 10px;
+							position:relative;
+							.sellOld{
+								position:absolute;
+								left:0;
+								bottom:60px;
+								font-size: 14px;
+								width:100px;
+								height:25px;
+								padding-left:15px;
+								background-color: liner-gradient(to-right,#000,rgba(0,0,0,0.3));
+							}
+
+							.bigImg{
+								width:100%;
+								// height:193px;
+							}
+							.bigImage{
+								width:100%;
+								height:50px;
+								box-sizing:border-box;
+
+								h5{
+									font-size: 14px;
+									overflow: hidden;
+									white-space:nowrap;
+									text-overflow:ellipsis;
+									padding-top:5px;
+								}
+								.smallImg{
+									width:100%;
+									line-height:24px;
+									overflow:hidden;									
+									strong{
+										float:left;
+										font-size:15px;
+										color:#FF5577;										
+									  }
+									.smallVlue{
+										height:24px;
+										line-height:24px;
+										float:right;
+										span{
+											padding-right:5px;
+											font-size:12px;
+										}
+										img{
+											width:14px;
+										}
+
+								    }
+
+								}
+								
+							}
+
+						}
+						
+					}
+
+				}
+			}
+
+			
+		}
+	}
+
+}
+

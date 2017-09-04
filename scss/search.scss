@@ -1,0 +1,97 @@
+@import "main.scss";
+
+#headerBox{
+	width:100%;
+	height:100%;	
+
+	input{
+		width:100%;
+		height:90%;
+		border:1px solid #ddd;
+		text-indent:10px;
+		border-radius:5px;		
+	}
+}
+
+.searchContent{
+	width:100%;
+	@include flexBox;
+	@include flex-direction("clumn");
+	background:#fff;
+
+	.sosuo{
+		width:100%;
+		padding-top:10px;
+		p{
+			height:30px;
+			text-align:center;
+			line-height: 30px;
+		}		
+
+		p:nth-of-type(1){
+			float:left;	
+			width:120px	;	
+			
+			img{
+				width:15px;
+				height:15px;
+				padding-right:5px;
+			}
+		}
+		p:nth-of-type(2){
+			float:right;
+			width:80px;	
+			
+			img{
+				width:15px;
+				height:15px;
+			}
+		}
+	}
+
+	.jilu{
+		width:100%;
+		height:40px;
+		line-height:40px;		
+		border-bottom:2px solid #eee;
+		p{
+			padding-left:40px;
+			font-size:15px;
+		}
+
+	}
+	.hotSearch{
+		width:100%;
+		height:30px;
+		font-size:15px;
+		line-height:30px;
+		padding-left:25px;
+		img{
+			width:15px;
+			padding-right:5px;			
+		}
+
+
+	}
+	.searchList{
+		width:100%;
+		box-sizing:border-box;
+		padding:20px;
+		ul{
+			width:100%;
+			li{
+				border:2px solid #eee;
+				padding:5px 10px;
+				float:left;
+				margin:0 10px 10px 0;
+				border-radius:5px;
+				font-size:12px;
+			}
+			.searchLists{
+				color:#f66;
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,192 @@
+@import "main.scss";
+
+
+.cartOne{
+  width:100%;
+  height:100%;
+  background:#eee;
+
+    .cartHeader{
+        width:100%;      
+        @include flexBox;
+        @include flex-direction("row");  
+        background:#eee;  
+        border-bottom:1px solid #ddd;    
+        
+        .homeImg1{
+            width:60px;
+            height:44px;
+            @include flexBox;
+            @include flex-center;
+            margin:0 5px;
+         
+        }
+        .headerBox{
+            @include flexBox;
+            @include flex(1);
+            @include flex-center;                
+            line-height:44px;
+            color:#666;
+            font-size:20px;            
+          
+        }
+        .homeImg2{
+            width:90px;
+            height:44px;
+            @include flexBox;
+            @include flex-center;
+            @include flex-direction("row");
+            color:#666;
+            span{
+                 padding-right:10px;
+            }
+        }
+     
+    }
+
+
+  .content{
+     @include flexBox;
+     @include flex-center;
+     background:#eee;  
+     width:100%; 
+     .CartContent{
+        width:100%;
+        height:400px;
+        @include flex-center; 
+        @include flex-direction("clumn"); 
+        
+        .shopBox{
+            width:127px;
+            height:127px;
+            border-radius:127px;
+            background:#ddd;
+            @include flexBox;
+            @include flex-center;
+                       
+            i{
+               font-size:60px;
+               color:#fff;
+            }          
+        }
+        p{
+            padding:10px;
+        }
+        .shopBtn{
+            text-align:center;
+            line-height:34px;
+            width:100px;
+            height:34px;
+            background:#FF5777;
+            color:#fff;
+            border-radius:5px;
+        }
+     }
+
+    .ShopContenter{
+        width:100%;        
+        margin-top:15px;       
+
+        ul{
+            width:100%;            
+            li{
+                width:100%; 
+                margin-bottom:15px;
+                border-bottom:1px solid #ddd;
+                border-top:1px solid #ddd; 
+                overflow: hidden;
+                background-color: #fff;               
+
+                .shopHead01{
+                    width:100%;
+                    height:38px;
+                    border-bottom:1px solid #ddd;
+                    line-height:38px; 
+                    box-sizing:border-box;
+                     padding:0 15px;
+                   strong{
+                        width:20px;
+                        height: 20px;
+                        background:url(//s10.mogucdn.com/img/x6/img/checkbox.png) 0 100% no-repeat;
+                        background-size: 100%;
+                        float:left;
+                        margin-top:9px;
+                    }
+                    span{
+                        font-size:14p;
+                        float:left;
+                        margin-left:10px;
+                    }
+                }
+
+                .shopHead02{
+                     width:100%;
+                     box-sizing:border-box;
+                     padding:15px;
+                     @include flexBox;
+                     @include flex-direction("row");
+
+                     strong{
+                        width:17px;
+                        height:17px;
+                        background:url(//s10.mogucdn.com/img/x6/img/checkbox.png) 0 100% no-repeat;
+                        background-size: 100%;
+                        display:block;
+                        margin-top:9px;
+                    }
+                    
+                    img{
+                        width:64px; 
+                        height:96px;
+                        margin:0 15px;                       
+                       
+                    }
+                    .cartText{
+                       @include flex(1);
+                       position:relative;
+
+                        h2{
+                            font:14px "微软雅黑";
+                            color:#555;
+                            font-weight:900;
+                            
+                        }
+                        p:nth-of-type(1){
+                            font-size:13px;
+                            color:#666;
+                            padding-top:5px;
+                        }
+
+                         p:nth-of-type(2){
+                            position:absolute;
+                            left:0; bottom:0;
+                            font-size:13px;
+                            color:#666;
+                            padding-top:5px;
+                            a{
+                                font-size:14px;
+                                color:#666;
+                            }
+                            span{
+                                padding-left:5px;
+                                font-size:13px;
+                                color:#666;
+                                text-decoration: line-through;
+                            }
+                        }
+                        i{
+                            position: absolute;
+                            right:0;
+                            bottom:0;
+                            font-size:12px;
+                            color:#666;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+  }
+}
+

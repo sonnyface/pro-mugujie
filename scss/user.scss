@@ -1,0 +1,183 @@
+@import "main.scss";
+#container{
+    width:100%;
+    height:100%;
+    position: relative;
+         
+        .userBox{
+            width:100%;
+            height:100%;
+            background:#ddd;
+            position:absolute;
+            left:0;top:0; 
+            display:none;         
+            
+            
+            #userBtn{
+                width:100px;
+                height:40px;
+                border-radius:8px;
+                background:#666;
+                color:#fff;
+                position:absolute;
+                left:0;top:0;
+                right:0;bottom:0;
+                margin:auto;
+                @include flex-center;  
+            }
+        }
+
+
+        .box{
+             width:100%;
+             height:100%;
+             position:absolute;
+             left:0;top:0; 
+             overflow-y:auto;
+             &::-webkit-scrollbar {display:none};
+
+
+            .userHeader{
+                width:100%;
+                height:90px;
+                img{
+                    width:45px;
+                    height:45px;
+                    border-radius:45px;
+                    float:left;
+                    margin:20px 15px 0 30px;
+                }
+                p{
+                    float:left;
+                    margin-top:20px;
+                    h2{
+                        font:18px "微软雅黑";
+                    }
+                    a{
+                        font-size:13px;
+                        color:#666;
+                        line-height:25px;
+                        span{
+                            padding-left:15px;
+                        }
+                    }
+                }
+            }
+
+        .userContent{
+            width:100%;
+
+            .kongBox{
+                width:100%;
+                height:10px;
+                background:#eee;
+              }
+
+            .dingDan{
+                width:100%;
+                height:50px;
+                border-bottom:1px solid #ddd;
+                line-height:50px;
+               img{
+                width:28px;
+                float:left;
+                padding:11px 10px 0 15px;
+
+               }
+               span{
+                float:left;
+                font-size:16px;
+               }
+               b{
+                float:right;
+                font-size:15px;
+                padding-right:10px
+               }
+            }
+
+            .fuKuan{
+                width:100%;
+                height:64px;
+                @include flexBox;
+                @include flex-direction("row");
+
+                dl{
+                    width:25%;
+                    height:100%;
+                    @include flex-center;
+                    dt{
+                        width:20px;
+                        img{
+                            width:100%;
+                        }
+                    }
+                    dd{ 
+                        @include flex-center;
+                        width:100%;
+                        font-size:14px;
+                        padding-top:5px
+                    }
+                }
+            }
+
+            .listBoxs{
+                width:100%;
+                li{
+                    width:100%;
+                    height:50px;
+                    border-bottom:1px solid #ddd;
+                    line-height:50px;
+                   img{
+                    width:28px;
+                    float:left;
+                    padding:11px 10px 0 15px;
+
+                   }
+                   span{
+                    float:left;
+                    font-size:16px;
+                   }
+                   b{
+                    float:right;
+                    font-size:15px;
+                    font-weight:100;
+                    padding-right:10px;
+                    color:#666;
+                   }
+
+                }
+                li:nth-of-type(7){
+                    width:100%; 
+                    height:65px;                       
+                    border-bottom:10px solid #eee;
+                    img{
+                        width:100%;
+                        margin:0;padding:0;
+                    }
+                }
+            }
+
+            .userBtms{
+                width:100%;
+                height:80px;
+                background:#eee;
+                box-sizing:border-box;
+                padding-top:10px;
+                #btn{
+                    width:80%;
+                    height:40px;
+                    margin-left:10%;
+                    background:#ff5577;
+                    border-radius:10px;
+                    color:#fff;
+                    font-weight:900;
+                    text-align: center;
+                    line-height:40px; 
+                    
+                }
+            }
+        }
+
+        }
+    
+}
